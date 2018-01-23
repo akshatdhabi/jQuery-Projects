@@ -1,0 +1,211 @@
+html {
+  height: 100%;
+  background: #e0e0e0;
+}
+
+#container {
+  height: 600px;
+  width: 750px;
+  background-color: #00bfa5;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px 0px grey;
+  -moz-box-shadow: 10px 10px 0px 0px grey;
+  -webkit-box-shadow: 10px 10px 0px 0px grey;
+  position: relative;
+}
+
+#score {
+  background-color: yellowgreen;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  left: 700px;
+  box-shadow: 5px 5px 0px 0px grey;
+  -moz-box-shadow: 5px 5px 0px 0px grey;
+  -webkit-box-shadow: 5px 5px 0px 0px grey;
+}
+
+#correct {
+  position: absolute;
+  left: 260px;
+  background-color: green;
+  color: white;
+  padding: 11px;
+  box-shadow: 2px 2px 0px 0px grey;
+  -webkit-box-shadow: 2px 2px 0px 0px grey;
+  -moz-box-shadow: 2px 2px 0px 0px grey;
+  display: none;
+}
+
+#wrong {
+  position: absolute;
+  left: 260px;
+  background-color: red;
+  color: white;
+  padding: 11px;
+  box-shadow: 2px 2px 0px 0px grey;
+  -moz-box-shadow: 2px 2px 0px 0px grey;
+  -webkit-box-shadow: 2px 2px 0px 0px grey;
+  display: none;
+}
+
+#fruitBox {
+  width: 650px;
+  height: 400px;
+  background-color: white;
+  margin: 50px auto 10px auto;
+  box-shadow: 2px 2px 0px 0px grey;
+  -moz-box-shadow: 2px 2px 0px 0px grey;
+  -webkit-box-shadow: 2px 2px 0px 0px grey;
+  font-size: 150px;
+  text-align: center;
+  font-family: monospace, sans-serif;
+  color: crimson;
+  text-shadow: 3px 3px 3px #d9d2d2;
+  line-height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+#instruction {
+  width: 450px;
+  height: 60px;
+  background-color: #7df843;
+  margin: 10px auto;
+  box-shadow: 2px 2px 0px 0px grey;
+  -moz-box-shadow: 2px 2px 0px 0px grey;
+  -webkit-box-shadow: 2px 2px 0px 0px grey;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 55px;
+  color: darkgreen;
+}
+
+.box {
+  background-color: white;
+  width: 85px;
+  height: 85px;
+  float: left;
+  margin-right: 36px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px 0px grey;
+  -moz-box-shadow: 3px 3px 0px 0px grey;
+  -webkit-box-shadow: 3px 3px 0px 0px grey;
+  text-align: center;
+  font-size: 40px;
+  line-height: 2px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+.box:hover {
+  background-color: blue;
+  color: white;
+}
+
+.box:active {
+  box-shadow: 0px 0px 0px 0px;
+  -moz-box-shadow: 0px 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  top: 4px;
+}
+
+#box1 {
+  margin-left: 2px;
+}
+
+#box4 {
+  margin-right: 0px;
+}
+
+.start {
+  background-color: white;
+  width: 100px;
+  height: 20px;
+  margin: -5px auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px 0px grey;
+  -moz-box-shadow: 3px 3px 0px 0px grey;
+  -webkit-box-shadow: 3px 3px 0px 0px grey;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.start:hover {
+  background-color: blue;
+  color: white;
+  width: 150px;
+}
+
+.start:active {
+  box-shadow: 0px 0px 0px 0px;
+  -moz-box-shadow: 0px 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  top: 4px;
+}
+
+#livesLeft {
+  background-color: burlywood;
+  height: 40px;
+  width: 100px;
+  position: absolute;
+  left: 70px;
+  top: 45px;
+  margin: -25px;
+  /*    border-radius: 10px;*/
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  line-height: 2.4px;
+  box-shadow: 5px 5px 0px 0px grey;
+  -moz-box-shadow: 5px 5px 0px 0px grey;
+  -webkit-box-shadow: 5px 5px 0px 0px grey;
+  visibility: hidden;
+}
+
+#gameOver {
+  background: #2196f3;
+  height: 350px;
+  width: 550px;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  top: 90px;
+  left: 115px;
+  z-index: 2;
+  display: none;
+}
+
+.lives {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  margin-top: 6px
+}
+
+.fruit {
+  display: none;
+  width: 80px;
+  position: absolute;
+}
